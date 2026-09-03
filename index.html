@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HESHAM — AI Visuals &amp; Digital Design</title>
+<meta name="description" content="AI visuals, cinematic commercials, social media design and digital experiences.">
+
+<meta property="og:title" content="HESHAM — AI Visuals &amp; Digital Design">
+<meta property="og:description" content="AI visuals, cinematic commercials, social media design and digital experiences.">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&family=Amiri:wght@400;700&family=Cairo:wght@300;400;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- PRELOADER -->
+<div id="preloader" aria-hidden="true">
+    <span class="preloader-name">HESHAM</span>
+    <span class="preloader-count" id="preloaderCount">00</span>
+</div>
+
+<div class="grain" aria-hidden="true"></div>
+
+<!-- CUSTOM CURSOR (desktop only) -->
+<div class="cursor" id="cursor" aria-hidden="true"><span class="cursor-label" id="cursorLabel"></span></div>
+<div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+<!-- ==========================================================
+     NAVIGATION
+     ========================================================== -->
+<header class="site-header" id="siteHeader">
+    <a href="#hero" class="logo">
+        <span class="logo-line">HESHAM</span>
+        <span class="logo-line logo-sub">Abdelhamed</span>
+    </a>
+
+    <nav class="primary-nav" aria-label="Primary">
+        <a href="#work" data-i18n="nav.work">Work</a>
+        <a href="#services" data-i18n="nav.services">Services</a>
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+    </nav>
+
+    <div class="nav-controls">
+        <button class="control-btn" id="langToggle" aria-label="Switch language" data-magnetic>
+            <span id="langToggleLabel">AR</span>
+        </button>
+        <button class="control-btn theme-btn" id="themeToggle" aria-label="Switch to light mode" data-magnetic>
+            <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="4.5" stroke="currentColor" stroke-width="1.4"/><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+            <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4 6.8 6.8 0 0 0 20 14.5Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+        </button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+            <span></span><span></span>
+        </button>
+    </div>
+</header>
+
+<nav class="mobile-nav" id="mobileNav" aria-label="Mobile" data-open="false">
+    <a href="#work" data-i18n="nav.work">Work</a>
+    <a href="#services" data-i18n="nav.services">Services</a>
+    <a href="#about" data-i18n="nav.about">About</a>
+    <a href="#contact" data-i18n="nav.contact">Contact</a>
+    <div class="mobile-nav-footer"><span id="mobileNavEmail"></span></div>
+</nav>
+
+<main id="top">
+
+    <!-- ==========================================================
+         HERO
+         ========================================================== -->
+    <section class="hero" id="hero">
+        <div class="hero-bg" aria-hidden="true"><div class="hero-glow"></div></div>
+
+        <!-- Profile photo — top right. Replace assets/profile/profile.jpg -->
+        <div class="profile-frame" id="profileFrame">
+            <svg class="profile-ring" viewBox="0 0 200 200" aria-hidden="true">
+                <circle class="ring-track" cx="100" cy="100" r="94"></circle>
+                <circle class="ring-sweep" cx="100" cy="100" r="94"></circle>
+            </svg>
+            <div class="profile-photo">
+                <img src="assets/profile/profile.jpg" alt="Portrait of Hesham Abdelhamed" id="profileImage" loading="eager">
+                <span class="profile-fallback" id="profileFallback" aria-hidden="true">H</span>
+            </div>
+        </div>
+
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="reveal-line"><span data-reveal>HESHAM</span></span>
+                <span class="reveal-line"><span data-reveal class="hero-title-sub">Abdelhamed</span></span>
+            </h1>
+            <p class="hero-subtitle" data-reveal data-i18n="hero.subtitle">AI Visuals &amp; Digital Experiences</p>
+            <p class="hero-text" data-reveal data-i18n="hero.text">I create cinematic AI visuals, digital experiences, and premium creative content.</p>
+
+            <div class="hero-ctas" data-reveal>
+                <a href="#work" class="btn btn-primary" data-magnetic data-i18n="hero.ctaWork">View My Work</a>
+                <a href="#contact" class="btn btn-ghost" data-magnetic data-i18n="hero.ctaContact">Let's Work Together</a>
+            </div>
+        </div>
+
+        <div class="scroll-indicator" aria-hidden="true">
+            <span class="scroll-line"></span>
+            <span class="scroll-word" data-i18n="hero.scroll">Scroll</span>
+        </div>
+    </section>
+
+    <!-- ==========================================================
+         SELECTED WORK
+         ========================================================== -->
+    <section class="work" id="work">
+        <div class="section-head">
+            <h2 data-reveal data-i18n="work.heading">Selected Work</h2>
+            <p class="section-note" data-reveal data-i18n="work.note">A working record of recent AI-driven commercial and design projects.</p>
+        </div>
+        <div class="work-grid" id="workGrid"></div>
+    </section>
+
+    <!-- ==========================================================
+         SERVICES
+         ========================================================== -->
+    <section class="services" id="services">
+        <div class="section-head">
+            <h2 data-reveal data-i18n="services.heading">What I Create</h2>
+        </div>
+        <div class="services-list" id="servicesList"></div>
+    </section>
+
+    <!-- ==========================================================
+         ABOUT
+         ========================================================== -->
+    <section class="about" id="about">
+        <div class="about-inner">
+            <h2 data-reveal data-i18n="about.heading1">Creative Technology.</h2>
+            <h2 class="about-heading-2" data-reveal data-i18n="about.heading2">Visual Storytelling.</h2>
+            <p class="about-text" data-reveal data-i18n="about.text">I combine AI, design, visual storytelling and technology to create premium digital experiences.</p>
+
+            <ul class="skills-list" aria-label="Skills">
+                <li data-reveal data-i18n="skills.aiVideo">AI Video</li>
+                <li data-reveal data-i18n="skills.photoshop">Photoshop</li>
+                <li data-reveal data-i18n="skills.capcut">CapCut</li>
+                <li data-reveal data-i18n="skills.aiImage">AI Image Generation</li>
+                <li data-reveal data-i18n="skills.webDesign">Web Design</li>
+                <li data-reveal>HTML</li>
+                <li data-reveal>CSS</li>
+                <li data-reveal>JavaScript</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ==========================================================
+         CONTACT
+         ========================================================== -->
+    <section class="contact" id="contact">
+        <p class="contact-eyebrow" data-reveal data-i18n="contact.eyebrow">Available for freelance projects</p>
+        <h2 class="contact-title" data-reveal data-i18n="contact.title">Let's create something extraordinary.</h2>
+
+        <a href="#" id="startProjectLink" class="btn btn-primary" data-magnetic data-i18n="contact.cta">Start a Project</a>
+
+        <!-- Contact icons — URLs come from siteConfig in script.js -->
+        <div class="contact-icons" id="contactIcons" aria-label="Contact links"></div>
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="footer-left">
+        <strong>HESHAM Abdelhamed</strong>
+        <span data-i18n="footer.tagline">AI Visuals • Digital Design</span>
+    </div>
+    <div class="footer-right">
+        <span>&copy; 2026</span>
+        <button id="backToTop" data-i18n="footer.top">Back to top ↑</button>
+    </div>
+</footer>
+
+<!-- ==========================================================
+     PROJECT CASE STUDY OVERLAY
+     ========================================================== -->
+<div class="project-overlay" id="projectOverlay" role="dialog" aria-modal="true" aria-label="Project detail" data-open="false">
+    <div class="overlay-top">
+        <button class="overlay-close" id="overlayClose" data-i18n="overlay.close">Close</button>
+        <div class="overlay-progress" id="overlayProgress"></div>
+    </div>
+    <div class="overlay-scroll" id="overlayScroll">
+        <div class="overlay-content" id="overlayContent"></div>
+    </div>
+    <div class="overlay-footnav">
+        <button class="overlay-nav-btn" id="prevProject" aria-label="Previous project">
+            <span class="nav-arrow">←</span><span class="nav-label" data-i18n="overlay.prev">Previous</span>
+        </button>
+        <button class="overlay-nav-btn" id="nextProject" aria-label="Next project">
+            <span class="nav-label" data-i18n="overlay.next">Next</span><span class="nav-arrow">→</span>
+        </button>
+    </div>
+</div>
+
+<!-- ==========================================================
+     IMAGE LIGHTBOX — for gallery / image case studies
+     ========================================================== -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" data-open="false">
+    <button class="lightbox-close" id="lightboxClose" data-i18n="overlay.close">Close</button>
+    <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous image">←</button>
+    <img class="lightbox-img" id="lightboxImg" src="" alt="">
+    <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next image">→</button>
+    <p class="lightbox-caption" id="lightboxCaption"></p>
+</div>
+
+<script src="projects.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

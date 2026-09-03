@@ -75,11 +75,11 @@ const projects = [
             ar: "حملة سوشيال ميديا فاخرة لمطعم راقٍ، تجمع بين تصوير سينمائي للأطباق وطباعة تحريرية أنيقة."
         },
         type: "gallery",
-        thumbnail: "assets/luna/hero.jpg",
+        thumbnail: "assets/Luna//hero.jpg",
         media: [
-            { src: "assets/luna/hero.jpg",    label: { en: "Hero Instagram Post", ar: "منشور إنستغرام رئيسي" } },
-            { src: "assets/luna/weekend.jpg", label: { en: "Weekend Offer — 20% Off", ar: "عرض نهاية الأسبوع — خصم 20%" } },
-            { src: "assets/luna/story.jpg",   label: { en: "Instagram Story", ar: "ستوري إنستغرام" } }
+            { src: "assets/Luna/hero.jpg",    label: { en: "Hero Instagram Post", ar: "منشور إنستغرام رئيسي" } },
+            { src: "assets/Luna//weekend.jpg", label: { en: "Weekend Offer — 20% Off", ar: "عرض نهاية الأسبوع — خصم 20%" } },
+            { src: "assets/Luna//story.jpg",   label: { en: "Instagram Story", ar: "ستوري إنستغرام" } }
         ],
         year: "",
         tools: ["Photoshop", "AI", "Graphic Design"],

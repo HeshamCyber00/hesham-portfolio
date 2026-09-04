@@ -363,7 +363,8 @@ html[dir="rtl"] .cs-meta-block ul li{ font-family: var(--serif-ar); }
 /* Same box size as the project media */
 .cs-media-video{
     width:100%;
-    aspect-ratio:4/3;
+    aspect-ratio:4 / 3;
+    height:auto;
     background:var(--mat);
     border:1px solid var(--line);
     display:flex;

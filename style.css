@@ -260,7 +260,10 @@ html[dir="rtl"] .project-info h3{ font-family: var(--serif-ar); }
     transition: transform .8s var(--ease-soft);
 }
 .project-media img, .project-media video{
-    width:100%; height:100%; object-fit: contain; object-position: center;
+    width:100%; height:100%; object-fit: contain; object-position: left center;
+}
+html[dir="rtl"] .project-media img, html[dir="rtl"] .project-media video{
+    object-position: right center;
 }
 .project-card:hover .project-media{ transform: scale(1.035); }
 .project-media::after{ content:""; position:absolute; inset:0; background: linear-gradient(180deg, rgba(0,0,0,0) 55%, rgba(0,0,0,.4) 100%); opacity:0; transition: opacity .5s var(--ease); pointer-events:none; }

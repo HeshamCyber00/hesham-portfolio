@@ -131,7 +131,7 @@ html[data-theme="light"] .grain{ opacity: .035; mix-blend-mode: multiply; }
     backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
     border-bottom: 1px solid var(--line);
 }
-.logo{ display:flex; flex-direction:column; line-height:1.15; font-family: var(--serif); }
+.logo{ display:flex; flex-direction:row; align-items:baseline; gap: 8px; line-height:1.15; font-family: var(--serif); white-space: nowrap; }
 .logo-line{ font-size: 15px; letter-spacing: .04em; }
 .logo-sub{ color: var(--muted); font-style: italic; font-size: 12px; }
 
@@ -180,8 +180,8 @@ html[dir="rtl"] .mobile-nav a{ font-family: var(--serif-ar); }
 .hero-glow{ position:absolute; top:50%; left:50%; width: 900px; height: 900px; transform: translate(-50%,-50%); background: radial-gradient(circle, rgba(216,199,160,0.07) 0%, rgba(216,199,160,0) 65%); }
 
 .profile-frame{
-    position:absolute; top: calc(var(--nav-h) + 28px); right: var(--pad); z-index: 2;
-    width: 128px; height: 128px;
+    position:absolute; top: calc(var(--nav-h) + 20px); right: var(--pad); z-index: 2;
+    width: 108px; height: 108px;
 }
 html[dir="rtl"] .profile-frame{ right:auto; left: var(--pad); }
 .profile-ring{ position:absolute; inset:0; width:100%; height:100%; overflow: visible; }
@@ -422,8 +422,8 @@ html[dir="rtl"] #prevProject{ border-right:none; border-left: 1px solid var(--li
 @media (max-width: 900px){
     .primary-nav{ display:none; }
     .menu-toggle{ display:block; }
-    .profile-frame{ width: 96px; height: 96px; top: calc(var(--nav-h) + 16px); }
-    .hero{ padding-top: calc(var(--nav-h) + 140px); justify-content:flex-start; }
+    .profile-frame{ width: 84px; height: 84px; top: calc(var(--nav-h) + 14px); }
+    .hero{ padding-top: calc(var(--nav-h) + 128px); justify-content:flex-start; }
     .project-card, .project-card:nth-child(even){ grid-template-columns: 1fr; gap: 16px; }
     .project-card .project-media{ order:1 !important; }
     .project-card .project-info{ order:2 !important; }
@@ -442,7 +442,8 @@ html[dir="rtl"] #prevProject{ border-right:none; border-left: 1px solid var(--li
     .cs-meta{ grid-template-columns: 1fr; }
     .cs-desc{ grid-column: auto; }
     .site-footer{ flex-direction: column; align-items:flex-start; }
-    .profile-frame{ width: 80px; height: 80px; }
+    .profile-frame{ width: 68px; height: 68px; }
+    .profile-frame .profile-photo{ inset: 9px; }
 }
 
 @media (max-width: 380px){ :root{ --pad: 18px; } }

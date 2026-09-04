@@ -250,6 +250,8 @@ section{ padding: clamp(90px, 12vw, 160px) var(--pad); position: relative; }
 .project-card:nth-child(even) .project-info{ order:2; }
 
 .project-num{ font-family: var(--serif); font-style: italic; font-size: 15px; color: var(--muted); transition: color .4s var(--ease); }
+.project-info{ text-align: right; }
+html[dir="rtl"] .project-info{ text-align: left; }
 .project-info h3{ font-family: var(--serif); font-weight: 500; font-size: clamp(30px, 4.4vw, 56px); letter-spacing: -.01em; transition: transform .5s var(--ease); }
 html[dir="rtl"] .project-info h3{ font-family: var(--serif-ar); }
 .project-info p{ margin-top: 10px; color: var(--muted); font-size: 13px; letter-spacing: .1em; text-transform: uppercase; }
@@ -425,6 +427,8 @@ html[dir="rtl"] #prevProject{ border-right:none; border-left: 1px solid var(--li
     .project-card, .project-card:nth-child(even){ grid-template-columns: 1fr; gap: 16px; }
     .project-card .project-media{ order:1 !important; }
     .project-card .project-info{ order:2 !important; }
+    .project-info{ text-align: left; }
+    html[dir="rtl"] .project-info{ text-align: right; }
     .project-num{ order:0; }
     .cs-gallery{ grid-template-columns: 1fr; }
     .cs-gallery-item{ grid-column: 1 / -1 !important; margin-top:0 !important; }

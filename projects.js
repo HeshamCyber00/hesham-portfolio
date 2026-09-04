@@ -118,35 +118,6 @@ const projects = [
     }
 }
 
-    ,{
-    id: "nexa",
-    number: "04",
-    title: "NEXA",
-    category: {
-        en: "WEB DESIGN / AI PRODUCT",
-        ar: "تصميم مواقع / منتج بالذكاء الاصطناعي"
-    },
-    subtitle: {
-        en: "AI SaaS Landing Page",
-        ar: "واجهة هبوط لمنصة SaaS بالذكاء الاصطناعي"
-    },
-    description: {
-        en: "A premium AI SaaS landing page designed and developed for NEXA, combining editorial typography, futuristic visuals, subtle motion and a conversion-focused interface.",
-        ar: "واجهة هبوط فاخرة لمنصة SaaS بالذكاء الاصطناعي باسم NEXA، تجمع بين الخطوط التحريرية والمشاهد المستقبلية والحركة البصرية الخفيفة وتجربة مستخدم تركز على التحويل."
-    },
-    quote: "",
-    type: "website",
-    thumbnail: "assets/nexa/thumbnail.jpg",
-    media: "assets/nexa/thumbnail.jpg",
-    url: "https://heshamcyber00.github.io/hesham-portfolio/assets/nexa/",
-    year: "2026",
-    tools: ["HTML", "CSS", "JavaScript", "AI"],
-    role: {
-        en: ["Web Design", "AI-Assisted Development", "Frontend Development"],
-        ar: ["تصميم مواقع", "تطوير بمساعدة الذكاء الاصطناعي", "تطوير واجهات أمامية"]
-    }
-}
-
 
     /* ==========================================================
        ADD NEW PROJECTS HERE

@@ -244,8 +244,8 @@ section{ padding: clamp(90px, 12vw, 160px) var(--pad); position: relative; }
    WORK GRID — media is always fully visible, never cropped
    ========================================================== */
 .work-grid{ display:flex; flex-direction:column; }
-.project-card{ position: relative; display:grid; grid-template-columns: 90px 1fr 340px; align-items:center; gap: 32px; padding: 36px 0; border-bottom: 1px solid var(--line); cursor: pointer; }
-.project-card:nth-child(even){ grid-template-columns: 90px 340px 1fr; }
+.project-card{ position: relative; display:grid; grid-template-columns: 90px 1fr minmax(220px, 340px); align-items:center; gap: 32px; padding: 36px 0; border-bottom: 1px solid var(--line); cursor: pointer; }
+.project-card:nth-child(even){ grid-template-columns: 90px minmax(220px, 340px) 1fr; }
 .project-card:nth-child(even) .project-media{ order:1; }
 .project-card:nth-child(even) .project-info{ order:2; }
 
@@ -422,7 +422,7 @@ html[dir="rtl"] #prevProject{ border-right:none; border-left: 1px solid var(--li
 @media (max-width: 900px){
     .primary-nav{ display:none; }
     .menu-toggle{ display:block; }
-    .profile-frame{ position: static; margin: 0 auto 32px; }
+    .profile-frame{ position: relative; margin: 0 auto 32px; }
     .hero{ padding-top: calc(var(--nav-h) + 20px); justify-content:flex-start; }
     .project-card, .project-card:nth-child(even){ grid-template-columns: 1fr; gap: 16px; }
     .project-card .project-media{ order:1 !important; }
